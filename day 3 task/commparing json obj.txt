@@ -1,0 +1,9 @@
+var obj1 = {
+"name": "s",
+"age":5,
+}
+var obj2 = {
+"age":5,
+"name":"s",
+}
+console.log(obj1==obj2);

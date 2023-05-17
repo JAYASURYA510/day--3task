@@ -1,0 +1,9 @@
+ function printData() {
+  const countries = JSON.parse(this.responseText);
+  countries.forEach((count) => console.log(count.flags.png.svg));
+}
+
+var request = new XMLHttpRequest();
+request.addEventListener("load", printData);
+request.open("GET", "https://restcountries.com/v3.1/all");
+request.send(); 
